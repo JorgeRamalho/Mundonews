@@ -15,7 +15,7 @@ export interface EditorialBlock {
 export const EDITORIAL_BLOCKS: EditorialBlock[] = [
   {
     id: 'compromisso',
-    title: 'Compromisso editorial',
+    title: 'Compromisso com a verdade',
     emoji: BRAND_EMOJI.truth,
     content:
       'Cada matéria publicada passa por verificação rigorosa de fatos. Nossos correspondentes nas principais capitais do mundo atuam em busca da verdade, sem filtros ideológicos.',

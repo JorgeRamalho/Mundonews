@@ -168,8 +168,8 @@ Autoridades pedem atenção a boletins municipais, risco de alagamentos e ventos
     author: 'Mirian Ramalho',
     authorRole: 'Editora-chefe — Curitiba',
     publishedAt: '2026-07-15T22:30:00',
-    imageUrl: 'https://images.unsplash.com/photo-1527482797697-01785c6c9e1b?w=800&q=80',
-    imageAlt: 'Chuva intensa e céu carregado',
+    imageUrl: 'https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?w=800&q=80',
+    imageAlt: 'Tempestade com raios e céu escuro durante alerta de temporais',
     tags: ['clima', 'Rio Grande do Sul', 'Defesa Civil'],
   },
   {

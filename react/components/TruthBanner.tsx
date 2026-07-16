@@ -4,7 +4,6 @@ export default function TruthBanner() {
   return (
     <section className="truth-banner">
       <div className="container">
-        <div className="truth-banner__icon" aria-hidden="true">{BRAND_EMOJI.truth}</div>
         <h2 className="truth-banner__title">
           {BRAND_EMOJI.ethics} Compromisso com a Verdade
         </h2>

@@ -5,6 +5,7 @@ import EditorialBlock from '../components/EditorialBlock';
 import { HOME_EDITORIAL_BLOCKS } from '@js/editorial';
 import Correspondents from '../components/Correspondents';
 import TruthBanner from '../components/TruthBanner';
+import InfoStatusBar from '../components/InfoStatusBar';
 import {
   getFeaturedArticle,
   getLatestArticles,
@@ -13,7 +14,7 @@ import { BRAND, BRAND_EMOJI } from '@js/brand';
 
 export default function HomePage() {
   const featured = getFeaturedArticle();
-  const latest = getLatestArticles(7).filter((a) => !a.isFeatured).slice(0, 6);
+  const latest = getLatestArticles(9).filter((a) => !a.isFeatured).slice(0, 8);
 
   return (
     <>
@@ -23,32 +24,15 @@ export default function HomePage() {
           <h1 className="hero__title">
             {BRAND.sloganWithEmoji}
           </h1>
-          <p className="hero__subtitle">
-            {BRAND_EMOJI.article} Artigos, {BRAND_EMOJI.opinion} opinião e informação com compromisso com a verdade.
-            {BRAND_EMOJI.team} {BRAND.teamTitle} atuando em busca da verdade no Brasil e pelo mundo.
-          </p>
           <div className="hero__cta">
             <Link to="/sobre" className="btn btn--primary">
               {BRAND_EMOJI.star} Conheça nossa missão
             </Link>
           </div>
-
-          <div className="hero__stats">
-            <div className="hero__stat">
-              <div className="hero__stat-value">{BRAND_EMOJI.globe} 2</div>
-              <div className="hero__stat-label">Cobertura em Capitais</div>
-            </div>
-            <div className="hero__stat">
-              <div className="hero__stat-value">{BRAND_EMOJI.live} 24/7</div>
-              <div className="hero__stat-label">Cobertura em Tempo Real</div>
-            </div>
-            <div className="hero__stat">
-              <div className="hero__stat-value">{BRAND_EMOJI.truth} 100%</div>
-              <div className="hero__stat-label">Compromisso em Fatos Verificados</div>
-            </div>
-          </div>
         </div>
       </section>
+
+      <InfoStatusBar />
 
       <main className="page__main">
         <div className="container page-grid page-grid--home">
@@ -70,6 +54,7 @@ export default function HomePage() {
             </section>
 
             <section className="editorial-section">
+              <h2 className="section-title">{BRAND_EMOJI.ethics} Editorial do Site</h2>
               <div className="editorial-grid">
                 {HOME_EDITORIAL_BLOCKS.map((block) => (
                   <EditorialBlock key={block.id} block={block} variant="home" />
