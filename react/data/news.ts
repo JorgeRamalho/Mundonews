@@ -1,5 +1,9 @@
 import type { NewsArticle, Correspondent } from '../types';
 
+/** Foto em public/ — caminho relativo para Live Server; absoluto no Vite dev. */
+const newsPhoto = (file: string) =>
+  import.meta.env.DEV ? `/noticias/${file}` : `../public/noticias/${file}`;
+
 export const correspondents: Correspondent[] = [
   {
     id: '0',
@@ -47,25 +51,42 @@ A Federação das Indústrias do Estado de São Paulo (Fiesp) e a Confederação
   },
   {
     id: '2',
-    slug: 'eua-ira-sexto-dia-ormuz-ataque-petroleiro',
-    title: 'EUA e Irã entram no sexto dia de ataques; forças americanas desabilitam petroleiro no Golfo',
+    slug: 'governo-rejeita-criticas-30-contatos-eua-tarifas',
+    title: 'Governo rejeita críticas e diz que fez mais de 30 contatos com os EUA para negociar tarifas',
     excerpt:
-      'Washington amplia bombardeios e reimpõe bloqueio naval. Teerã responde com drones e mísseis contra bases aliadas no Golfo. Estreito de Ormuz segue sob forte tensão.',
-    content: `Estados Unidos e Irã mantêm troca de ataques pelo sexto dia consecutivo, em 16 de julho de 2026, após o colapso da trégua firmada em junho, segundo BBC, Associated Press e NPR.
+      'Segundo a diplomacia brasileira, contatos ocorreram em diferentes níveis desde o anúncio do tarifaço; com Jamieson Greer e Marco Rubio, foram 11 tentativas de negociação, todas por iniciativa do Brasil.',
+    content: `A decisão dos Estados Unidos de impor uma nova taxa sobre produtos brasileiros gerou uma disputa em torno da responsabilidade pelo novo "tarifaço".
 
-O Comando Central dos EUA (Centcom) informou uma onda de ataques a centros de comando, defesas costeiras e instalações de mísseis, incluindo alvos em Bandar Abbas e na ilha Greater Tunb. Relatos da mídia estatal iraniana também apontam impactos em regiões próximas a Teerã e na província de Semnan.
+Enquanto a oposição diz que houve falhas na negociação e culpa o presidente Luiz Inácio Lula da Silva (PT), integrantes do governo defendem que a determinação tem caráter "ideológico" e "político".
 
-Em paralelo, forças americanas desabilitaram o petroleiro M/T Belma, de bandeira de Curaçao, que, segundo o Centcom, ignorou avisos ao tentar seguir para o terminal de Kharg Island, violando o bloqueio naval reimposto a portos iranianos. Teerã classificou o Estreito de Ormuz como “linha vermelha” e afirmou ter atacado alvos em Kuwait, Bahrein e Jordânia.
+O Escritório do Representante de Comércio dos Estados Unidos (USTR, na sigla em inglês) confirmou a proposta de um novo "tarifaço" com uma extensa lista de isenções. Itens como petróleo, café e carne bovina ficarão fora da nova tarifa de 25%. A medida entra em vigor em 22 de julho.
 
-O tráfego de navios pelo estreito caiu fortemente, pressionando o mercado de petróleo. A Mundo News prioriza comunicados oficiais e agências internacionais, distinguindo fatos confirmados de declarações políticas.`,
-    category: 'mundo',
-    author: 'Ahmed Hassan',
-    authorRole: 'Correspondente — Cairo',
-    publishedAt: '2026-07-16T08:15:00',
-    imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80',
-    imageAlt: 'Navios petroleiros e rota marítima estratégica',
+Segundo um levantamento da diplomacia brasileira, foram realizados mais de 30 contatos desde o anúncio do tarifaço original. As conversas ocorreram por telefone, videoconferência e reuniões presenciais, em níveis presidencial, ministerial e técnico.
+
+Além disso, representantes do governo conversaram com o secretário de Estado dos Estados Unidos, Marco Rubio, e com o representante de Comércio americano, Jamieson Greer, em pelo menos 11 ocasiões.
+
+O governo afirma que, em todos os casos, a iniciativa para abrir o diálogo partiu do lado brasileiro, em uma tentativa de negociar uma saída para o impasse comercial.
+
+A informação é apresentada como resposta às críticas de que o Brasil teria deixado de buscar uma negociação com o governo dos Estados Unidos antes da adoção das medidas tarifárias.
+
+A percepção é que o cenário se mostrava favorável às negociações após o encontro entre Lula e Trump na Malásia e ainda melhor após o encontro entre os dois em Washington. Porém, nas últimas semanas, esse cenário mudou depois da visita do senador e pré-candidato à Presidência Flávio Bolsonaro (PL) aos EUA.
+
+Governo chamou decisão de 'lastimável'
+
+Em nota divulgada após o anúncio, o governo classificou a decisão como um "marco lastimável" na relação entre os dois países, e "repudia a decisão" anunciada nessa quarta-feira. O presidente Lula também afirmou que vai acionar a lei da reciprocidade.
+
+"Não há justificativa para medidas unilaterais contra o nosso país. Segundo estatísticas do próprio governo norte-americano, os EUA acumularam nos últimos 15 anos US$ 424,5 bilhões em superávit de bens e serviços com o Brasil."
+
+A Mundo News registra as declarações oficiais e o contexto da disputa comercial com imparcialidade, sem qualificar o mérito político das acusações cruzadas.`,
+    category: 'brasil',
+    author: 'Lis Ramalho Barbosa',
+    authorRole: 'Jornalista e colunista — Brasília',
+    publishedAt: '2026-07-16T08:20:00',
+    imageUrl: newsPhoto('governo-contatos-eua-tarifas.png'),
+    imageAlt:
+      'Autoridades em encontro diplomático Brasil–EUA, com bandeiras dos dois países ao fundo',
     isBreaking: true,
-    tags: ['Irã', 'EUA', 'Ormuz', 'petróleo'],
+    tags: ['tarifas', 'diplomacia', 'EUA', 'governo'],
   },
   {
     id: '3',
