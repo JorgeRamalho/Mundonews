@@ -26,7 +26,7 @@ export const EDITORIAL_BLOCKS: EditorialBlock[] = [
     emoji: BRAND_EMOJI.ethics,
     content:
       'Imparcialidade não é tratar todos os lados como equivalentes quando os fatos dizem o contrário. É apresentar o contexto completo, citar fontes e separar notícia de opinião.',
-    link: { path: '/noticia/opiniao-imparcialidade-portais-noticias', label: 'Leia o editorial completo' },
+    link: { path: '/noticia/opiniao-tarifas-fatos-alem-do-ruido-eleitoral', label: 'Leia o editorial completo' },
   },
   {
     id: 'verificacao',
@@ -56,15 +56,15 @@ export const EDITORIAL_BLOCKS: EditorialBlock[] = [
     emoji: '🛡️',
     content:
       'Desconfie de manchetes sensacionalistas e conteúdos sem fonte identificável. Em temas complexos — clima, energia, conflitos — busque sempre mais de um veículo antes de formar opinião.',
-    link: { path: '/noticia/opiniao-verificacao-fatos-era-algoritmos', label: 'Saiba como se proteger' },
+    link: { path: '/noticia/opiniao-fumaca-transfronteirica-clima-saude', label: 'Saiba como se proteger' },
   },
   {
     id: 'opiniao',
     title: 'Opinião do dia',
     emoji: BRAND_EMOJI.opinion,
     content:
-      'Na era dos algoritmos, verificar fatos é ato de responsabilidade cívica. O jornalismo profissional nunca foi tão necessário — e tão desafiado.',
-    link: { path: '/noticia/opiniao-verificacao-fatos-era-algoritmos', label: 'Ler coluna de opinião' },
+      'No tarifaço com os EUA, o leitor precisa de fatos documentados — não só de narrativa eleitoral. Verificar fontes é responsabilidade cívica.',
+    link: { path: '/noticia/opiniao-tarifas-fatos-alem-do-ruido-eleitoral', label: 'Ler coluna de opinião' },
   },
 ];
 

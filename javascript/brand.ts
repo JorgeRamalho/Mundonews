@@ -3,6 +3,9 @@
  * Logo, slogan, emojis e metadados da marca
  */
 
+import logoIconUrl from '../public/logo-icon.svg?url';
+import logoUrl from '../public/logo.svg?url';
+
 export const BRAND = {
   name: 'Mundo News',
   nameWithEmoji: '🌎 Mundo News',
@@ -42,13 +45,10 @@ export const BRAND_EMOJI = {
   star: '⭐',
 } as const;
 
+/** URLs geradas pelo Vite — funcionam no Live Server e no npm run dev. */
 export const BRAND_ASSETS = {
-  favicon: '/favicon.svg',
-  logo: '/logo.svg',
-  logoIcon: '/logo-icon.svg',
-  ogImage: '/og-image.svg',
-  appleTouchIcon: '/apple-touch-icon.svg',
-  manifest: '/site.webmanifest',
+  logo: logoUrl,
+  logoIcon: logoIconUrl,
 } as const;
 
 export const NAV_LINKS_BRANDED = [

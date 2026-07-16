@@ -9,13 +9,13 @@
   "lang": "pt-BR",
   "icons": [
     {
-      "src": "/logo-icon.svg",
+      "src": "./logo-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/apple-touch-icon.svg",
+      "src": "./apple-touch-icon.svg",
       "sizes": "180x180",
       "type": "image/svg+xml",
       "purpose": "maskable"
