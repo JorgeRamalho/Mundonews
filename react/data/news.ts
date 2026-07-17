@@ -1,8 +1,16 @@
 import type { NewsArticle, Correspondent } from '../types';
 
-/** Foto em public/ — caminho relativo para Live Server; absoluto no Vite dev. */
-const newsPhoto = (file: string) =>
-  import.meta.env.DEV ? `/noticias/${file}` : `../public/noticias/${file}`;
+/**
+ * Fotos em public/noticias/ (Vite copia para a raiz do dist no build).
+ * - Vercel / Vite: /noticias/...
+ * - Live Server em html5/: ../public/noticias/...
+ */
+const newsPhoto = (file: string) => {
+  if (typeof window !== 'undefined' && window.location.pathname.includes('/html5/')) {
+    return `../public/noticias/${file}`;
+  }
+  return `/noticias/${file}`;
+};
 
 export const correspondents: Correspondent[] = [
   {
