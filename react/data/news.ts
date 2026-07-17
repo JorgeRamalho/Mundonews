@@ -27,11 +27,123 @@ export const correspondents: Correspondent[] = [
 ];
 
 /**
- * Notícias de última hora — atualizado em 16/07/2026.
- * Fontes: BBC, Agência Brasil, USTR, AP, Reuters, CNN Brasil, Al Jazeera.
+ * Notícias de última hora — atualizado em 17/07/2026.
+ * Fontes: BBC, Agência Brasil, USTR, AP, Reuters, CNN Brasil, Al Jazeera, Folha.
  * Redação imparcial com verificação cruzada de fatos.
  */
 export const articles: NewsArticle[] = [
+  {
+    id: '17',
+    slug: 'copa-2026-fifa-acusacoes-manipulacao-argentina',
+    title:
+      'Copa 2026: acusações de manipulação da Fifa colocam Argentina, Messi e a credibilidade do Mundial sob escrutínio',
+    excerpt:
+      'Após virada sobre o Egito, técnico e federação acusam favorecimento. Dados de arbitragem, chaveamento e expansão comercial alimentam a crise — sem prova pública de conluio.',
+    content: `A Copa do Mundo 2026 atravessa sua fase decisiva sob uma nuvem que a Fifa preferiria evitar: a suspeita, espalhada em coletivas, redes sociais e análises estatísticas, de que o próprio desenho do torneio — e decisões de campo — estariam sendo moldados para preservar o espetáculo comercial em torno da Argentina e de Lionel Messi.
+
+A Mundo News investigou o que é acusação, o que é padrão documentado e o que ainda não tem prova. Separar esses planos é obrigação jornalística. Tratar “manipulação da Fifa” como fato consumado, sem evidência forense ou documento oficial, seria repetir narrativa — não informar.
+
+O estopim público veio das oitavas de final. A Argentina, atual campeã, venceu o Egito por 3 a 2 após estar perdendo por 2 a 0. O técnico egípcio Hossam Hassan disse, em entrevista coletiva, que a partida foi “claramente manipulada” e sugeriu interesse da entidade em manter Messi e a seleção albiceleste vivos no Mundial. A federação do Egito pediu à Fifa o afastamento da equipe de arbitragem do francês François Letexier, citando “graves erros” e “dois pesos e duas medidas”. Mohamed Salah também reclamou do conjunto de decisões no jogo decisivo.
+
+Entre os lances contestados estão um gol egípcio anulado após revisão do VAR, pênaltis não marcados a favor do Egito e a condução geral da partida até o gol da virada nos acréscimos. Controvérsia de arbitragem em mata-mata de Copa não é novidade. O salto qualitativo da crise é outro: a acusação deixou de mirar só o árbitro e passou a apontar a Fifa como interessada no resultado.
+
+Não há, até o fechamento desta reportagem, prova pública — e-mail, áudio, documento interno ou investigação independente — de que a partida tenha sido “combinada” pela entidade. Há, sim, um pacote de decisões e regras que, somadas, geram a percepção de favorecimento e exigem resposta transparente da Fifa.
+
+O primeiro eixo é o chaveamento. No sorteio de dezembro, a Fifa distribuiu as quatro seleções mais bem colocadas no ranking — França, Argentina, Espanha e Inglaterra — em chaves diferentes, de modo que, terminando em primeiro nos grupos, só poderiam se enfrentar a partir das semifinais. A Argentina enfrentou Cabo Verde e Egito nas primeiras fases eliminatórias e, nas quartas, a Suíça — caminho visto por analistas e pela imprensa internacional (BBC, Folha) como relativamente mais confortável que o de outras cabeças de chave. A mudança foi justificada como proteção ao equilíbrio do mata-mata; o efeito prático foi reduzir o risco precoce para os favoritos de marketing.
+
+O segundo eixo é numérico. Coberturas da BBC e da Folha apontaram que a Argentina voltou a liderar o ranking de pênaltis a favor no torneio e apresentou proporção baixa de cartões amarelos por falta cometida — contraste forte com seleções como a Inglaterra. Análises independentes de dados do Mundial também destacaram um padrão anômalo de intervenções do VAR favoráveis à albiceleste em relação às adversárias. Padrão estatístico não é sentença de culpa. Mas, sob o critério da honestidade editorial, também não pode ser descartado como “choro de eliminado” sem exame.
+
+O terceiro eixo é estrutural e comercial. A Copa 2026 — EUA, Canadá e México, 48 seleções e 104 jogos — é o maior experimento da história do Mundial. Críticos (AP, The Conversation, BBC Sport) apontam diluição da competitividade na fase de grupos, menos “jeopardy” para as potências e prioridade à receita: mais jogos, mais janelas de transmissão, mais inventário publicitário. Queixas sobre preço de ingressos, logística entre 16 cidades e impacto ambiental reforçam a tese de que a Fifa redesenhou o produto menos pelo equilíbrio esportivo e mais pelo volume de negócio. Nesse sentido, “manipulação” pode significar duas coisas diferentes: (1) fraude de resultado, ainda não comprovada; (2) engenharia do torneio para maximizar audiência e valor de marca — documentada nas próprias decisões de formato e calendário.
+
+Há ainda o precedente simbólico envolvendo Messi e o presidente Gianni Infantino. Em 2025, a escolha do Inter Miami — clube de Messi — para o Mundial de Clubes nos EUA, em detrimento de critérios que muitos consideravam mais naturais para a vaga do país-sede, alimentou a narrativa de que a vitrine Messi pesa nas decisões da casa. Infantino defende a expansão do futebol global; adversários enxergam conflito entre integridade competitiva e culto à estrela.
+
+Do lado argentino, a defesa do título tem sido mais sofrida do que o favoritismo sugeria: viradas apertadas, pênaltis desperdiçados pelo próprio Messi e um elenco que mistura veteranos da conquista de 2022 com nomes da nova geração. A seleção segue como potência técnica — Enzo Fernández, Álvarez, Mac Allister, Martínez na zaga — e Messi, artilheiro histórico das Copas, permanece o centro gravitacional do relato. Isso explica por que qualquer decisão a favor da Argentina vira combustível viral: o tamanho da marca multiplica a suspeita.
+
+A Fifa e a direção de arbitragem rejeitam, em linha histórica, acusações de conluio e afirmam independência técnica das equipes de arbitragem e do VAR. Enquanto não houver investigação externa com acesso a comunicações e critérios de escalação, o máximo que o jornalismo responsável pode afirmar é isto: a Copa 2026 vive uma crise de confiança; as acusações de manipulação partem de protagonistas do torneio; os dados de arbitragem e o desenho comercial merecem auditoria pública; e a prova de fraude organizada ainda não foi apresentada.
+
+Para o leitor, o critério da Mundo News permanece o da marca: a verdade em primeiro lugar. Acusação se publica com fonte. Dado se publica com contexto. Conclusão de “golpe da Fifa” só se publica com evidência.`,
+    category: 'esporte',
+    author: 'Lis Ramalho Barbosa',
+    authorRole: 'Jornalista e colunista — Brasília',
+    publishedAt: '2026-07-17T18:00:00',
+    imageUrl: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=80',
+    imageAlt: 'Estádio lotado em noite de jogo decisivo da Copa do Mundo',
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1000&q=80',
+        alt: 'Torcida celebra com bandeiras azuis e brancas no estádio',
+        caption: 'A Argentina segue como um dos centros de audiência do Mundial 2026.',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1000&q=80',
+        alt: 'Jogador de futebol em disputa de bola em campo gramado',
+        caption: 'Decisões de campo e do VAR viraram o epicentro das acusações após Argentina x Egito.',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80',
+        alt: 'Bola de futebol oficial em gramado iluminado',
+        caption: 'Lionel Messi e a geração campeã de 2022 seguem no centro do relato comercial da Fifa.',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1000&q=80',
+        alt: 'Torcida em arquibancada com faixas e clima de final de Copa',
+        caption: 'O formato de 48 seleções ampliou o espetáculo — e as dúvidas sobre o equilíbrio competitivo.',
+      },
+    ],
+    isBreaking: true,
+    tags: ['Copa do Mundo', 'Fifa', 'Argentina', 'Messi', 'futebol', 'arbitragem'],
+  },
+  {
+    id: '18',
+    slug: 'argentina-messi-caminho-copa-2026-chaveamento',
+    title: 'Argentina e Messi: o caminho até as fases finais e o debate sobre o chaveamento da Fifa',
+    excerpt:
+      'Cabeça de chave protegida no sorteio, adversários fora do top 10 e a sombra do marketing em torno do camisa 10. O que o chaveamento muda — e o que não prova.',
+    content: `Na Copa do Mundo 2026, a Argentina entrou como uma das quatro potências isoladas no sorteio: França, Argentina, Espanha e Inglaterra foram colocadas em lados que só se cruzariam nas semifinais caso vencessem seus grupos.
+
+Na prática, a albiceleste eliminou Cabo Verde e Egito — ambos fora do grupo das dez melhores do ranking — antes de encarar a Suíça nas quartas. Analistas e reportagens da imprensa internacional destacaram que o caminho, comparado ao de Espanha e França, pareceu menos áspero nas primeiras chaves do mata-mata.
+
+Lionel Messi segue como âncora tática e comercial. Parte da crise de reputação da Fifa nasce exatamente daí: quanto maior o valor de manter a estrela no torneio, maior a pressão por transparência em cada pênalti, cartão e revisão de VAR.
+
+A seleção argentina não é só Messi. Nomes como Enzo Fernández, Julián Álvarez, Alexis Mac Allister e a linha defensiva comandada por Lisandro Martínez sustentam o projeto de Scaloni. O desempenho irregular em alguns jogos, porém, reforçou a tese de que o favoritismo de marketing não se traduz automaticamente em domínio em campo.
+
+O chaveamento, por si só, não prova fraude. Prova que a Fifa redesenhou o sorteio para evitar choques precoces entre gigantes — escolha política e comercial com efeito esportivo mensurável. É esse efeito que a opinião pública agora julga.`,
+    category: 'esporte',
+    author: 'Lis Ramalho Barbosa',
+    authorRole: 'Jornalista e colunista — Brasília',
+    publishedAt: '2026-07-17T16:30:00',
+    imageUrl: 'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=1000&q=80',
+    imageAlt: 'Jogadores celebram gol em partida internacional de futebol',
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1000&q=80',
+        alt: 'Arquibancada colorida em estádio de futebol',
+        caption: 'O valor de audiência da Argentina pressiona a Fifa a prestar contas sobre o formato do mata-mata.',
+      },
+    ],
+    tags: ['Argentina', 'Messi', 'Copa do Mundo', 'Fifa'],
+  },
+  {
+    id: '19',
+    slug: 'copa-2026-formato-48-times-receita-integridade',
+    title: 'Mundial de 48 seleções: quando a receita da Fifa tensiona a integridade do jogo',
+    excerpt:
+      'Mais jogos, menos risco para favoritos e críticas de jogadores e analistas. A expansão de 2026 redesenhou o produto — e a confiança do torcedor.',
+    content: `Com 48 seleções e 104 partidas, a Copa do Mundo 2026 é o maior rearranjo do produto Fifa em décadas. A entidade vende inclusão global: mais confederações, mais estreias, mais “histórias”. Críticos respondem com outra palavra: diluição.
+
+Na fase de grupos, o avanço de terceiros colocados e o desenho de 12 chaves reduziram o medo clássico do “grupo da morte” para as potências. Reportagens da BBC Sport e da Associated Press descreveram rodadas com pouco risco real para cabeças de chave e uma sensação de “qualificação embutida” até o mata-mata de 32 — espelho do antigo formato completo.
+
+Há também o custo humano e logístico: calendário inchado, deslocamentos entre EUA, Canadá e México, e alertas de sindicatos e atletas sobre fadiga. No plano ambiental, estudos citados na imprensa apontam o torneio como um dos mais intensivos em carbono da história do Mundial.
+
+Nada disso prova que um jogo específico foi “comprado”. Provam que a Fifa manipula — no sentido literal de redesenhar — as regras do espetáculo com prioridade comercial. Quando, no mata-mata, explodem acusações de favorecimento à Argentina, o terreno já estava fértil: a confiança no árbitro do jogo depende da confiança na casa que escreveu o regulamento.`,
+    category: 'esporte',
+    author: 'Jorge Ramalho Barbosa',
+    authorRole: 'Tecnologia da Informação — Curitiba',
+    publishedAt: '2026-07-17T14:00:00',
+    imageUrl: 'https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1000&q=80',
+    imageAlt: 'Campo de futebol visto das arquibancadas antes do apito inicial',
+    tags: ['Copa do Mundo', 'Fifa', 'formato', 'futebol'],
+  },
   {
     id: '1',
     slug: 'eua-tarifas-25-brasil-reciprocidade-marco-lastimavel',
@@ -387,4 +499,8 @@ export function getFeaturedArticle(): NewsArticle | undefined {
 
 export function getLatestArticles(limit = 10): NewsArticle[] {
   return sortByDate(articles).slice(0, limit);
+}
+
+export function getSportsArticles(limit = 6): NewsArticle[] {
+  return sortByDate(articles.filter((a) => a.category === 'esporte')).slice(0, limit);
 }

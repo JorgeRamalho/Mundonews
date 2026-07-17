@@ -1,4 +1,10 @@
-export type NewsCategory = 'brasil' | 'mundo' | 'opiniao' | 'artigo' | 'breaking';
+export type NewsCategory = 'brasil' | 'mundo' | 'opiniao' | 'artigo' | 'esporte' | 'breaking';
+
+export interface ArticleImage {
+  url: string;
+  alt: string;
+  caption?: string;
+}
 
 export interface NewsArticle {
   id: string;
@@ -12,6 +18,7 @@ export interface NewsArticle {
   publishedAt: string;
   imageUrl: string;
   imageAlt: string;
+  gallery?: ArticleImage[];
   isBreaking?: boolean;
   isFeatured?: boolean;
   tags: string[];

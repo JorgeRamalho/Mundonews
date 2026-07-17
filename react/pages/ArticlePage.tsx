@@ -60,8 +60,32 @@ export default function ArticlePage() {
           <p style={{ fontWeight: 600, fontSize: '1.2rem', color: 'var(--color-text-muted)' }}>
             {article.excerpt}
           </p>
-          {paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+          {paragraphs.slice(0, 2).map((paragraph, index) => (
+            <p key={`lead-${index}`}>{paragraph}</p>
+          ))}
+
+          {article.gallery && article.gallery.length > 0 && (
+            <div className="article-gallery">
+              {article.gallery.map((image) => (
+                <figure key={image.url} className="article-gallery__item">
+                  <img
+                    src={image.url}
+                    alt={image.alt}
+                    className="article-gallery__image"
+                    loading="lazy"
+                  />
+                  {(image.caption || image.alt) && (
+                    <figcaption className="article-gallery__caption">
+                      {image.caption ?? image.alt}
+                    </figcaption>
+                  )}
+                </figure>
+              ))}
+            </div>
+          )}
+
+          {paragraphs.slice(2).map((paragraph, index) => (
+            <p key={`body-${index}`}>{paragraph}</p>
           ))}
         </div>
 

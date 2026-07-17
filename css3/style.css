@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 .badge--mundo { background: #1351b4; color: #fff; }
 .badge--opiniao { background: #6b4c9a; color: #fff; }
 .badge--artigo { background: #2d6a4f; color: #fff; }
+.badge--esporte { background: #0b6e4f; color: #fff; }
 
 @keyframes pulse {
   0%, 100% { opacity: 1; }

@@ -659,6 +659,125 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* ---- Sidebar Sports ---- */
+
+.sidebar-sports__featured {
+  display: block;
+  color: inherit;
+  margin-bottom: 0.85rem;
+}
+
+.sidebar-sports__featured:hover .sidebar-sports__headline {
+  color: var(--color-primary);
+}
+
+.sidebar-sports__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  display: block;
+  margin-bottom: 0.65rem;
+}
+
+.sidebar-sports__kicker {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.35rem;
+}
+
+.sidebar-sports__headline {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  margin-bottom: 0.4rem;
+  transition: color var(--transition);
+}
+
+.sidebar-sports__excerpt {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.sidebar-sports__time {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.sidebar-sports__thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.35rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.sidebar-sports__thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.sidebar-sports__list {
+  margin-top: 0.25rem;
+}
+
+.sidebar-sports__more {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.sidebar-sports__more:hover {
+  text-decoration: underline;
+}
+
+.article-gallery {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+}
+
+.article-gallery__item {
+  margin: 0;
+}
+
+.article-gallery__image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.article-gallery__caption {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+@media (min-width: 720px) {
+  .article-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article-gallery__item:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 1023px) {
   .sidebar__sticky {
     position: static;

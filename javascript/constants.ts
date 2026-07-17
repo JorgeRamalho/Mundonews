@@ -14,5 +14,6 @@ export const CATEGORY_ROUTES: Record<string, string> = {
   brasil: '/brasil',
   mundo: '/mundo',
   opiniao: '/opiniao',
+  esporte: '/esporte',
   artigo: '/artigos',
 };

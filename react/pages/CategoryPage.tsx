@@ -12,6 +12,7 @@ const categoryDescriptions: Record<string, string> = {
   brasil: 'Os principais fatos e acontecimentos do Brasil, com reportagens verificadas e contexto.',
   mundo: 'Notícias internacionais das principais capitais do mundo, em tempo real.',
   opiniao: 'Análises e reflexões de nossos editores e correspondentes sobre os fatos do dia.',
+  esporte: 'Copa do Mundo, futebol e bastidores do esporte — com fatos, dados e separação clara entre acusação e prova.',
   artigo: 'Reportagens especiais, histórias em profundidade e conteúdo editorial exclusivo.',
 };
 

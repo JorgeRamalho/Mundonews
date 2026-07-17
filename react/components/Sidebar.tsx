@@ -5,6 +5,7 @@ import { SIDEBAR_EDITORIAL_BLOCKS, MONITORED_SOURCES } from '@js/editorial';
 import { BRAND_EMOJI } from '@js/brand';
 import EditorialBlock from './EditorialBlock';
 import SidebarWeather from './SidebarWeather';
+import SidebarSports from './SidebarSports';
 
 export default function Sidebar() {
   const latest = getLatestArticles(8).filter((a) => a.category === 'brasil' || a.category === 'mundo');
@@ -56,6 +57,7 @@ export default function Sidebar() {
         </div>
 
         <SidebarWeather />
+        <SidebarSports />
       </div>
     </aside>
   );

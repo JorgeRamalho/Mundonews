@@ -14,6 +14,7 @@ export default function App() {
         <Route path="brasil" element={<CategoryPage category="brasil" />} />
         <Route path="mundo" element={<CategoryPage category="mundo" />} />
         <Route path="opiniao" element={<CategoryPage category="opiniao" />} />
+        <Route path="esporte" element={<CategoryPage category="esporte" />} />
         <Route path="artigos" element={<CategoryPage category="artigo" />} />
         <Route path="noticia/:slug" element={<ArticlePage />} />
         <Route path="sobre" element={<AboutPage />} />

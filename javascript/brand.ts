@@ -43,6 +43,7 @@ export const BRAND_EMOJI = {
   ethics: '🛡️',
   team: '👥',
   star: '⭐',
+  sports: '⚽',
 } as const;
 
 /** URLs geradas pelo Vite — funcionam no Live Server e no npm run dev. */
@@ -56,6 +57,7 @@ export const NAV_LINKS_BRANDED = [
   { path: '/brasil', label: 'Brasil', emoji: '🇧🇷' },
   { path: '/mundo', label: 'Mundo', emoji: '🌎' },
   { path: '/opiniao', label: 'Opinião', emoji: '💬' },
+  { path: '/esporte', label: 'Esporte', emoji: '⚽' },
   { path: '/artigos', label: 'Artigos', emoji: '📄' },
   { path: '/sobre', label: 'Sobre', emoji: 'ℹ️' },
 ] as const;

@@ -61,6 +61,7 @@ export function getCategoryLabel(category: string): string {
     mundo: 'Mundo',
     opiniao: 'Opinião',
     artigo: 'Artigo',
+    esporte: 'Esporte',
     breaking: 'Urgente',
   };
   return labels[category] ?? category;
