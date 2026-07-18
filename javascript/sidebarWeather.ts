@@ -17,23 +17,15 @@ export interface SidebarCityWeather extends SidebarCity {
 
 export const SIDEBAR_WEATHER_CITIES: SidebarCity[] = [
   { name: 'Brasília', country: 'Brasil', lat: -15.78, lon: -47.93 },
-  { name: 'São Paulo', country: 'Brasil', lat: -23.55, lon: -46.63 },
-  { name: 'Rio de Janeiro', country: 'Brasil', lat: -22.91, lon: -43.17 },
-  { name: 'Curitiba', country: 'Brasil', lat: -25.43, lon: -49.27 },
   { name: 'Buenos Aires', country: 'Argentina', lat: -34.6, lon: -58.38 },
-  { name: 'Washington', country: 'EUA', lat: 38.91, lon: -77.04 },
   { name: 'Londres', country: 'Reino Unido', lat: 51.51, lon: -0.13 },
+  { name: 'Washington', country: 'EUA', lat: 38.91, lon: -77.04 },
   { name: 'Paris', country: 'França', lat: 48.86, lon: 2.35 },
+  { name: 'Roma', country: 'Itália', lat: 41.9, lon: 12.5 },
   { name: 'Berlim', country: 'Alemanha', lat: 52.52, lon: 13.41 },
   { name: 'Madri', country: 'Espanha', lat: 40.42, lon: -3.7 },
   { name: 'Lisboa', country: 'Portugal', lat: 38.72, lon: -9.14 },
-  { name: 'Roma', country: 'Itália', lat: 41.9, lon: 12.5 },
-  { name: 'Moscou', country: 'Rússia', lat: 55.76, lon: 37.62 },
-  { name: 'Cairo', country: 'Egito', lat: 30.04, lon: 31.24 },
-  { name: 'Pequim', country: 'China', lat: 39.9, lon: 116.41 },
   { name: 'Tóquio', country: 'Japão', lat: 35.68, lon: 139.69 },
-  { name: 'Nova Déli', country: 'Índia', lat: 28.61, lon: 77.21 },
-  { name: 'Camberra', country: 'Austrália', lat: -35.28, lon: 149.13 },
 ];
 
 const WEATHER_BY_CODE: Record<number, { label: string; icon: string }> = {
