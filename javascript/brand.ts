@@ -44,6 +44,7 @@ export const BRAND_EMOJI = {
   team: '👥',
   star: '⭐',
   sports: '⚽',
+  horoscope: '✨',
 } as const;
 
 /** URLs geradas pelo Vite — funcionam no Live Server e no npm run dev. */
